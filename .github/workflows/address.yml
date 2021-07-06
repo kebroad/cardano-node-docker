@@ -53,3 +53,4 @@ jobs:
           platforms: linux/arm/v7
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
+          file: Dockerfile.${{ env.IMAGE_NAME }}
